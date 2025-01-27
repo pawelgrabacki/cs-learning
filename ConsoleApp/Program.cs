@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Linq.Expressions;
+using System.Numerics;
 
 namespace ConsoleApp
 {
@@ -16,12 +17,13 @@ namespace ConsoleApp
             
             //data types
 
-            int x = 10;             //whole number
+            int x = 1;             //whole number
             double y = 2.32;        //foating point number
             double c = 4.34354;
             bool z = true;          //stores value either true or false
             char j = 'a';           //single character
             string s = "test";      //multiple characters stored in array
+            int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; //stores multiple values of same type
             string divider = "------------------------------------------------------------------------";
 
             //type casting----------------------------------------
@@ -64,10 +66,38 @@ namespace ConsoleApp
                 
             }while (n <= 10);
 
-            
+
+            foreach (int item in a)// loop designed to operate on arrays and its items
+            {
+                Console.WriteLine(item);
+            }
 
 
-          
+
+
+            switch(x) //switch case statement allows to execute choosen case/code
+            {
+                case 1:
+                    Console.WriteLine("Case "+x);
+                    break;
+
+                case 10:
+                    Console.WriteLine("Case "+x);
+                    break;
+
+
+            }
+
+
+
+            if (x == 1  || x==5) //allows to check if condition or conditions are true and based on that executes code
+            {
+                Console.WriteLine("Hello from if statement \n"+x);
+            }
+            else 
+            {
+                Console.WriteLine("Hello from if statement "+x);
+            }
         }
     }
 }
