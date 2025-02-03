@@ -141,7 +141,7 @@ namespace ConsoleApp
             private int vmax;
             private string name;
 
-            // Cnstructor
+            // Constructor
             public Samolot(int i, int o, int p, string name)
             {
                 this.dlugosc = i;
@@ -150,7 +150,7 @@ namespace ConsoleApp
                 this.name = name;
             }
 
-            // Metody
+            // Methods
             public void SetName(string u)
             {
                 this.name = u;
@@ -172,7 +172,7 @@ namespace ConsoleApp
 
         public class Odrzutowiec : Samolot
         {
-            // Konstruktor klasy dziedziczącej musi wywołać konstruktor klasy bazowej
+            
             public Odrzutowiec(int i, int o, int p, string name) : base(i, o, p, name)
             {
             }
