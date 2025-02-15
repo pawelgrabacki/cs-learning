@@ -98,6 +98,15 @@ namespace ConsoleApp
             {
                 Console.WriteLine("Hello from if statement "+x);
             }
+
+
+            //file reading
+            string path = "C:\\Users\\pawgr\\source\\repos\\pawelgrabacki\\cs-learning\\ConsoleApp\\identifiers.txt";
+
+            string readText = File.ReadAllText(path);
+            Console.WriteLine(readText);
+
+
         }
     }
 }
